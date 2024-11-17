@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v4
         with:
-          java-version: 'java21'
+          java-version: '17'
           distribution: 'microsoft'
 
       - name: Build with Maven
@@ -51,4 +51,4 @@ jobs:
           app-name: 'social-media-server'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9315ED16B55D415B9CED33ACF3A1254E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AE5A239653A74D4CA4D2BEA4BB1A2413 }}
